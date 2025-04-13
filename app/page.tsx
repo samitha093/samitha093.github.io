@@ -4,7 +4,7 @@ import FooterSection from "@/modules/footer";
 import WebSiteSection from "@/modules/web-site";
 import WebAppSection from "@/modules/web-app";
 import EComSection from "@/modules/ecom-app";
-import BMSOnboardSection from "@/modules/bms";
+// import BMSOnboardSection from "@/modules/bms";
 import AboutSection from "@/modules/about";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
   <WebSiteSection/>
   <WebAppSection/>
   <EComSection/>
-  <BMSOnboardSection/>
+  {/* <BMSOnboardSection/> */}
   <FooterSection/>
 </div>
   );

@@ -109,9 +109,7 @@ export const HeroHeader = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" })
                   }
                 >
-                  <Link href="#">
                     <span>CONTACT ME</span>
-                  </Link>
                 </Button>
                 <Button
                   asChild
@@ -121,9 +119,7 @@ export const HeroHeader = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" })
                   }
                 >
-                  <Link href="#">
                     <span>CONTACT ME</span>
-                  </Link>
                 </Button>
               </div>
             </div>

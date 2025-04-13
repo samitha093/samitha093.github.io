@@ -2,30 +2,10 @@ import { Logo } from '@/components/logo'
 import Link from 'next/link'
 
 const links = [
-    {
-        title: 'Features',
-        href: '#',
-    },
-    {
-        title: 'Solution',
-        href: '#',
-    },
-    {
-        title: 'Customers',
-        href: '#',
-    },
-    {
-        title: 'Pricing',
-        href: '#',
-    },
-    {
-        title: 'Help',
-        href: '#',
-    },
-    {
-        title: 'About',
-        href: '#',
-    },
+    { name: "About", href: "#about" },
+    { name: "Features", href: "#features" },
+    { name: "Solutions", href: "#solutions" },
+    { name: "Products", href: "#products" },
 ]
 
 export default function FooterSection() {
@@ -39,7 +19,7 @@ export default function FooterSection() {
                 <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
                     {links.map((link, index) => (
                         <Link key={index} href={link.href} className="text-muted-foreground hover:text-primary block duration-150">
-                            <span>{link.title}</span>
+                            <span>{link.name}</span>
                         </Link>
                     ))}
                 </div>
@@ -77,7 +57,7 @@ export default function FooterSection() {
                         </svg>
                     </Link>
                 </div>
-                <span className="text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Tailus UI, All rights reserved</span>
+                <span className="text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} OCCRAA Teeam, All rights reserved</span>
             </div>
         </footer>
     )

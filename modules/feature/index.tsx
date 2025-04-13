@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card'
+import { CardContent } from '@/components/ui/card'
 import { CardSpotlight } from '@/components/ui/card-spotlight'
 import { Shield, Users } from 'lucide-react'
 
@@ -19,7 +19,10 @@ export default function FeaturesSection() {
                                     </svg>
                                     <span className="mx-auto block w-fit text-5xl font-semibold">100%</span>
                                 </div>
-                                <h2 className="mt-6 text-center text-3xl font-semibold">Customizable</h2>
+                                <div className='flex flex-col justify-center items-center'>
+                                    <h2 className="mt-6 text-center text-3xl font-semibold">Customizable</h2>
+                                    <p className="text-foreground text-center">Tailor every detail to match your unique needs.</p>
+                                </div>
                             </CardContent>
                         </CardSpotlight>
                         <CardSpotlight className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2" theme='purple'>
@@ -50,8 +53,8 @@ export default function FeaturesSection() {
                                     </svg>
                                 </div>
                                 <div className="relative z-10 mt-6 space-y-2 text-center">
-                                    <h2 className="group-hover:text-secondary-950 text-lg font-medium transition dark:text-white">Secure by default</h2>
-                                    <p className="text-foreground">Provident fugit and vero voluptate. magnam magni doloribus dolores voluptates a sapiente nisi.</p>
+                                    <h2 className="group-hover:text-secondary-950 text-lg font-medium transition dark:text-white">Top-Notch Security</h2>
+                                    <p className="text-foreground">Ensuring your data stays safe with advanced protection.</p>
                                 </div>
                             </CardContent>
                         </CardSpotlight>
@@ -98,7 +101,7 @@ export default function FeaturesSection() {
                                 </div>
                                 <div className="relative z-10 mt-14 space-y-2 text-center">
                                     <h2 className="text-lg font-medium transition">Faster than light</h2>
-                                    <p className="text-foreground">Provident fugit vero voluptate. magnam magni doloribus dolores voluptates inventore nisi.</p>
+                                    <p className="text-foreground">Experience smooth performance without unnecessary lag.</p>
                                 </div>
                             </CardContent>
                         </CardSpotlight>
@@ -109,8 +112,8 @@ export default function FeaturesSection() {
                                         <Shield className="m-auto size-5" strokeWidth={1} />
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Faster than light</h2>
-                                        <p className="text-foreground">Provident fugit vero voluptate. Voluptates a sapiente inventore nisi.</p>
+                                        <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Reliable Aftercare</h2>
+                                        <p className="text-foreground">Get ongoing support for seamless service and maintenance.</p>
                                     </div>
                                 </div>
                                 <div className="rounded-tl-(--radius) relative -mb-6 -mr-6 mt-6 h-fit border-l border-t p-6 py-6 sm:ml-6">
@@ -150,7 +153,7 @@ export default function FeaturesSection() {
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-lg font-medium transition">Keep your loved ones safe</h2>
-                                        <p className="text-foreground">Voluptate. magnam magni doloribus dolores voluptates a sapiente inventore nisi.</p>
+                                        <p className="text-foreground">Ensure a reliable and happy connection with your customers and partners.</p>
                                     </div>
                                 </div>
                                 <div className="before:bg-(--color-border) relative mt-6 before:absolute before:inset-0 before:mx-auto before:w-px sm:-my-6 sm:-mr-6">

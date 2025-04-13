@@ -1,43 +1,126 @@
-import { Cpu, Zap } from 'lucide-react'
-import Image from 'next/image'
+import {
+  MonitorSmartphone,
+  LayoutDashboard,
+  UserCheck,
+  Mail,
+  FileText,
+  SearchCheck,
+} from "lucide-react";
+import Image from "next/image";
 
 export default function WebSiteSection() {
-    return (
-        <section className="py-5" id='solutions'>
-            <div className="mx-auto space-y-8  px-6 md:px-16 lg:px-32 md:space-y-16">
-                <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">The Lyra ecosystem brings together our models.</h2>
-                <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
-                    <div className="relative space-y-4">
-                        <p className="text-muted-foreground">
-                            Gemini is evolving to be more than just the models. <span className="text-accent-foreground font-bold">It supports an entire ecosystem</span> — from products innovate.
-                        </p>
-                        <p className="text-muted-foreground">It supports an entire ecosystem — from products to the APIs and platforms helping developers and businesses innovate</p>
+  return (
+    <section className="py-10" id="solutions">
+      <div className="mx-auto space-y-16 px-6 md:px-16 lg:px-32">
+        <h2 className="text-4xl font-semibold tracking-tight lg:text-5xl">
+          💼 Business Profile Website
+        </h2>
 
-                        <div className="grid grid-cols-2 gap-3 pt-6 sm:gap-4">
-                            <div className="space-y-3">
-                                <div className="flex items-center gap-2">
-                                    <Zap className="size-4" />
-                                    <h3 className="text-sm font-medium">Faaast</h3>
-                                </div>
-                                <p className="text-muted-foreground text-sm">It supports an entire helping developers and innovate.</p>
-                            </div>
-                            <div className="space-y-2">
-                                <div className="flex items-center gap-2">
-                                    <Cpu className="size-4" />
-                                    <h3 className="text-sm font-medium">Powerful</h3>
-                                </div>
-                                <p className="text-muted-foreground text-sm">It supports an entire helping developers and businesses.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative mt-6 sm:mt-0">
-                        <div className="bg-linear-to-b aspect-67/34 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
-                            <Image src="/exercice-dark.png" className="hidden rounded-[15px] dark:block" alt="payments illustration dark" width={1206} height={612} />
-                            <Image src="/exercice.png" className="rounded-[15px] shadow dark:hidden" alt="payments illustration light" width={1206} height={612} />
-                        </div>
-                    </div>
+        <div className="grid gap-12 lg:grid-cols-2">
+          {/* Left Content */}
+          <div className="space-y-8 text-base leading-relaxed text-muted-foreground">
+            <p className="text-lg font-medium text-foreground">
+              A sleek single-page website to represent your business online.
+            </p>
+            <p>
+              Perfect for individuals or businesses who need a simple yet
+              elegant online presence, with tailored design that reflects your
+              brand identity.
+            </p>
+
+            <div className="grid grid-cols-2 gap-6 sm:gap-8">
+              {/* Feature 1 */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <MonitorSmartphone className="size-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">
+                    Responsive Design
+                  </h3>
                 </div>
+                <p>Beautifully optimized for all screen sizes and devices.</p>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <LayoutDashboard className="size-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">
+                    Smooth User Experience
+                  </h3>
+                </div>
+                <p>Clean navigation with fast load time and fluid layout.</p>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <UserCheck className="size-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">
+                    Business Profile Section
+                  </h3>
+                </div>
+                <p>
+                  Showcase your business details in a structured, impactful
+                  layout.
+                </p>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <Mail className="size-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">
+                    Contact Form Integration
+                  </h3>
+                </div>
+                <p>
+                  Let customers reach out easily with a secure contact form.
+                </p>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <FileText className="size-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">
+                    Content Layout
+                  </h3>
+                </div>
+                <p>
+                  Neatly structured content that aligns with your message and
+                  goals.
+                </p>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <SearchCheck className="size-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">
+                    SEO-friendly
+                  </h3>
+                </div>
+                <p>
+                  Search engine optimized structure to help you get discovered.
+                </p>
+              </div>
             </div>
-        </section>
-    )
+          </div>
+
+          {/* Right Image */}
+          <div className="relative">
+            <div className="aspect-[67/34] overflow-hidden rounded-2xl shadow-lg bg-gradient-to-b from-zinc-300/40 to-transparent dark:from-zinc-700/30">
+              <Image
+                src="/web-page.webp"
+                className="rounded-[15px]"
+                alt="business site dark preview"
+                width={1206}
+                height={612}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

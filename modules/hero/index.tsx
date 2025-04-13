@@ -47,7 +47,7 @@ export default function HeroSection() {
                 as="h1"
                 className="text-balance text-4xl font-medium sm:text-5xl md:text-6xl"
               >
-                Your gateway to endless entertainment experiences
+                Bringing Your Brand to Life ✨. Elevate 🚀, Inspire 💡, and Dominate 💪 Online!
               </TextEffect>
               <TextEffect
                 per="line"
@@ -57,9 +57,20 @@ export default function HeroSection() {
                 as="p"
                 className="mx-auto mt-12 max-w-2xl text-pretty text-lg"
               >
-                Tailwindcss highly customizable components for building modern
-                websites and applications that look and feel the way you mean
-                it.
+                Are you someone who appreciate a blend of wit and tech-savvy
+                elegance? Cause I am. If you want a digital space that&apos;s all
+                signal, no noise, and a dash of dry humor, go no further – let&apos;s
+                code something memorable together.
+              </TextEffect>
+              <TextEffect
+                per="line"
+                preset="fade-in-blur"
+                speedSegment={0.3}
+                delay={0.9}
+                as="p"
+                className="mx-auto mt-12 max-w-2xl text-pretty text-xs text-gray-400"
+              >
+                - Lakshan Pathiraja - Developer @ OCCRAA Team
               </TextEffect>
 
               <AnimatedGroup
@@ -76,7 +87,10 @@ export default function HeroSection() {
                 }}
                 className="mt-12"
               >
-                <form action="" className="mx-auto flex justify-center items-center">
+                <form
+                  action=""
+                  className="mx-auto flex justify-center items-center"
+                >
                   {/* <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.5rem)] border pr-2 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
                                         <Mail className="pointer-events-none absolute inset-y-0 left-4 my-auto size-4" />
 
@@ -138,8 +152,8 @@ export default function HeroSection() {
           </div>
         </section>
         <div className="max-w-6xl mx-auto px-6 pt-16">
-                    <TextHoverEffect text="OCCRAA" />
-                </div>
+          <TextHoverEffect text="OCCRAA" />
+        </div>
       </main>
     </>
   );
